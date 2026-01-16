@@ -1,8 +1,8 @@
 const MainHeader = () => {
   return (
-    <footer>
+    <header>
       <h1>Questo è l' Header</h1>
-    </footer>
+    </header>
   );
 };
 

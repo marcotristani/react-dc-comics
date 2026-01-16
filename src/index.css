@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans";
+}
+header {
+  background-color: blue;
+}
+main {
+  background-color: yellow;
+}
+footer {
+  background-color: black;
+  color: white;
+}
