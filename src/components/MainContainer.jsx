@@ -1,6 +1,6 @@
 const MainContainer = () => {
   return (
-    <main>
+    <main className="padding-x">
       <h1>Questo è il main</h1>
     </main>
   );

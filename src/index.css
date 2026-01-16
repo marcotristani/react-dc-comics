@@ -6,9 +6,40 @@
 body {
   font-family: "Open Sans";
 }
-header {
-  background-color: blue;
+li {
+  list-style-type: none;
 }
+
+/*Utility class */
+.padding-x {
+  padding: 0 100px;
+}
+
+.nav-selected {
+  color: blue;
+  border-bottom: 5px solid blue;
+}
+
+/* Regole pagina */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+header figure {
+  margin: auto 0;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  padding: 50px 0;
+  margin: 0 8px;
+  font-weight: 600;
+  font-size: small;
+  border-bottom: 5px solid transparent;
+}
+
 main {
   background-color: yellow;
 }

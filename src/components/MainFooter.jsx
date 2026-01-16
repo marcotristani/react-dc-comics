@@ -1,6 +1,6 @@
 const MainFooter = () => {
   return (
-    <footer>
+    <footer className="padding-x">
       <h1>Questo è il footer</h1>
     </footer>
   );
