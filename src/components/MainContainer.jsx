@@ -9,6 +9,9 @@ const MainContainer = () => {
           <div className="card" key={comic.id}>
             <figure>
               <img src={comic.thumb} alt={comic.description} />
+              <div className="activate-hover">
+                <h4>{comic.price}</h4>
+              </div>
             </figure>
             <figcaption>{comic.series.toUpperCase()}</figcaption>
           </div>
