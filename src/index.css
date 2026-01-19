@@ -9,6 +9,10 @@ body {
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*Utility class */
 .padding-x {
@@ -21,6 +25,8 @@ li {
 }
 
 /* Regole pagina */
+
+/*Regole Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -29,21 +35,112 @@ header {
 header figure {
   margin: auto 0;
 }
-nav ul {
+header nav {
   display: flex;
 }
-nav ul li {
+header nav a {
+  display: block;
+  height: 100%;
   padding: 50px 0;
   margin: 0 8px;
   font-weight: 600;
   font-size: small;
   border-bottom: 5px solid transparent;
 }
+header nav a:hover {
+  color: blue;
+  border-bottom: 5px solid blue;
+}
 
+/*Regole Main*/
 main {
   background-color: yellow;
 }
-footer {
-  background-color: black;
+
+/*Regole Footer */
+
+/*Regole Nav-buy*/
+footer .container-all-buy {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0282f9;
   color: white;
+}
+footer .cointainer-buy {
+  width: 18%;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+footer .icon-buy {
+  max-width: 50px;
+  height: 50px;
+}
+footer .decription-buy {
+  padding-left: 5px;
+  color: white;
+  font-size: small;
+}
+
+/*Regole Nav-List*/
+.container-nav-list {
+  background-image: url(assets/img/footer-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.container-nav-list nav {
+  display: flex;
+  color: gray;
+  font-size: small;
+}
+.container-nav-list nav .col {
+  padding: 40px 20px;
+}
+.container-nav-list nav .col h1 {
+  font-size: large;
+  padding: 10px 0;
+  color: white;
+}
+.container-nav-list nav .col a:hover {
+  color: white;
+}
+.container-nav-list figure {
+  position: absolute;
+  right: 50px;
+  top: -100px;
+  width: 500px;
+}
+.container-nav-list figure img {
+  max-width: 100%;
+}
+/*Regole Sign e Social Bar*/
+.container-button-social {
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.container-button-social button {
+  padding: 10px;
+  background-color: inherit;
+  border: 2px solid #0282f9;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.container-button-social .social-container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  gap: 15px;
+}
+.container-button-social .social-container span {
+  color: #0282f9;
+  font-size: large;
+  font-weight: bold;
+  margin-right: 15px;
 }

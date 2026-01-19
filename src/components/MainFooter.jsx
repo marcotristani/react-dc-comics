@@ -1,7 +1,13 @@
+import NavBuyIcon from "./FooterSection/NavBuyIcon";
+import NavList from "./FooterSection/NavList";
+import SignSocial from "./FooterSection/SignSocial";
+
 const MainFooter = () => {
   return (
-    <footer className="padding-x">
-      <h1>Questo è il footer</h1>
+    <footer>
+      <NavBuyIcon />
+      <NavList />
+      <SignSocial />
     </footer>
   );
 };
