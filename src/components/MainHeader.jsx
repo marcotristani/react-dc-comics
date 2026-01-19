@@ -72,10 +72,9 @@ const MainHeader = () => {
       <nav>
         <ul>
           {navLinks.map((link) => (
-            <li>
+            <li key={link.id}>
               <a
                 href={link.src}
-                key={link.id}
                 className={link.selected ? "nav-selected" : ""}
               >
                 {link.name.toUpperCase()}
