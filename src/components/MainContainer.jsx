@@ -14,6 +14,11 @@ const MainContainer = () => {
           </div>
         ))}
       </div>
+      <div className="button-load-more">
+        <a href="#">
+          <button>LOAD MORE</button>
+        </a>
+      </div>
     </main>
   );
 };

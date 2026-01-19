@@ -86,17 +86,25 @@ main .card figure {
   max-width: 100%;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  /* position: relative; */
 }
 main .card figure img {
   max-width: 100%;
   transform: scale(1.5);
-  /* position: absolute; */
-  /* top: 50px; */
 }
 main .card figcaption {
   color: white;
   padding-top: 10px;
+}
+main .button-load-more {
+  width: 100%;
+  background-color: #303030;
+  text-align: center;
+  padding-bottom: 30px;
+}
+main .button-load-more button {
+  background-color: #0282f9;
+  color: white;
+  padding: 10px 50px;
 }
 
 /*Regole Footer */
