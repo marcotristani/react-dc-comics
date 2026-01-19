@@ -1,3 +1,5 @@
+import ListSocial from "../../assets/arrayJs/ListSocials";
+
 const SignSocial = () => {
   return (
     <div className="container-button-social padding-x">
@@ -6,21 +8,11 @@ const SignSocial = () => {
       </a>
       <div className="social-container">
         <span>FOLLOW US</span>
-        <a href="">
-          <img src="src/assets/img/footer-facebook.png" alt="logo facebook" />
-        </a>
-        <a href="">
-          <img src="src/assets/img/footer-twitter.png" alt="logo twitter" />
-        </a>
-        <a href="">
-          <img src="src/assets/img/footer-youtube.png" alt="logo youtube" />
-        </a>
-        <a href="">
-          <img src="src/assets/img/footer-pinterest.png" alt="logo pinterest" />
-        </a>
-        <a href="">
-          <img src="src/assets/img/footer-periscope.png" alt="logo periscope" />
-        </a>
+        {ListSocial.map((social) => (
+          <a href={social.href} key={social.id}>
+            <img src={social.src} alt={social.description} />
+          </a>
+        ))}
       </div>
     </div>
   );
