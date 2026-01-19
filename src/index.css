@@ -35,7 +35,7 @@ header {
 header figure {
   margin: auto 0;
 }
-header nav {
+header nav ul {
   display: flex;
 }
 header nav a {
