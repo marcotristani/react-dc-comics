@@ -141,8 +141,9 @@ footer .decription-buy {
 .container-nav-list nav .col {
   padding: 40px 20px;
 }
-.container-nav-list nav .col h1 {
+.container-nav-list nav .col .title {
   font-size: large;
+  font-weight: bold;
   padding: 10px 0;
   color: white;
 }
