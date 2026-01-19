@@ -1,4 +1,4 @@
-import navLinks from "../assets/arrayJs/navHeaderLink";
+import NavLinks from "../assets/arrayJs/NavHeaderLink";
 import logo from "../assets/img/dc-logo.png";
 
 const MainHeader = () => {
@@ -11,7 +11,7 @@ const MainHeader = () => {
       </figure>
       <nav>
         <ul>
-          {navLinks.map((link) => (
+          {NavLinks.map((link) => (
             <li key={link.id}>
               <a
                 href={link.src}

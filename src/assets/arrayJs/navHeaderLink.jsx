@@ -1,4 +1,4 @@
-const navLinks = [
+const NavLinks = [
   {
     id: 1,
     name: "Characters",
@@ -60,4 +60,4 @@ const navLinks = [
     selected: false,
   },
 ];
-export default navLinks;
+export default NavLinks;
