@@ -9,6 +9,7 @@ const MainContainer = () => {
       <div className="container-cards padding-x">
         {Comics.map((comic) => (
           <ComponentCard
+            key={comic.id}
             id={comic.id}
             description={comic.description}
             thumb={comic.thumb}
