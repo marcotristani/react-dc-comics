@@ -26,6 +26,12 @@ a {
 .bold {
   font-weight: bold;
 }
+.back-white {
+  background-color: whitesmoke;
+}
+.back-yellow {
+  background-color: yellowgreen;
+}
 
 /* Regole pagina */
 
@@ -139,7 +145,6 @@ main .button-load-more button {
   display: none;
   position: absolute;
   z-index: 900;
-  background-color: whitesmoke;
   width: calc(100% / 6);
   transform: translate(-10%, 0);
   padding: 20px;

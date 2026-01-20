@@ -16,7 +16,9 @@ const MainContainer = () => {
               price={comic.price}
               series={comic.series}
             >
-              <div className="d-none">
+              <div
+                className={`d-none ${comic.type === "graphic novel" ? "back-white" : "back-yellow"}`}
+              >
                 <h2>{comic.title}</h2>
                 <p className="bold">{comic.writers}</p>
                 <p>{comic.description}</p>
