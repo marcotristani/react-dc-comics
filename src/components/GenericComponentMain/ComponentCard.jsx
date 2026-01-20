@@ -1,5 +1,5 @@
 const ComponentCard = (props) => {
-  const { id, thumb, description, price, series } = props;
+  const { thumb, description, price, series } = props;
   return (
     <div className="card">
       <figure>
