@@ -1,4 +1,6 @@
 import Comics from "../assets/arrayJs/Comics";
+import ComponentCard from "./GenericComponentMain/ComponentCard";
+
 const MainContainer = () => {
   return (
     <main>
@@ -6,15 +8,13 @@ const MainContainer = () => {
       <div className="badge">CURRENT SERIES</div>
       <div className="container-cards padding-x">
         {Comics.map((comic) => (
-          <div className="card" key={comic.id}>
-            <figure>
-              <img src={comic.thumb} alt={comic.description} />
-              <div className="activate-hover">
-                <h4>{comic.price}</h4>
-              </div>
-            </figure>
-            <figcaption>{comic.series.toUpperCase()}</figcaption>
-          </div>
+          <ComponentCard
+            id={comic.id}
+            description={comic.description}
+            thumb={comic.thumb}
+            price={comic.price}
+            series={comic.series}
+          />
         ))}
       </div>
       <div className="button-load-more">
